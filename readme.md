@@ -4,3 +4,4 @@
 4) Install fzf
 5) replace zshrc, gitconfig and vimrc
 6) source files mentionned above
+7) install powerlevel10k theme https://github.com/romkatv/powerlevel10k#oh-my-zsh
