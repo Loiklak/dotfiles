@@ -59,6 +59,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
+Plug 'leafgarland/typescript-vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
