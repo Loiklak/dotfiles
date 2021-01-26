@@ -9,4 +9,4 @@
 7) install powerlevel10k theme https://github.com/romkatv/powerlevel10k#oh-my-zsh
 
 # Vim packages
-- NERDtree
+Install vim-plug then open vim and run `:PlugInstall`

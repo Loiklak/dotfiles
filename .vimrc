@@ -43,3 +43,22 @@ set cursorline
 
 " ' nicer colorscheme
 colorscheme slate
+
+" Set the working directory to wherever the open file lives
+set autochdir
+
+" Setup fzf within Vim and bind it to Ctrl+P
+" GFiles automatically ignores gitignored files, use :FZF to get all files
+nmap <C-P> :GFiles<CR>
+
+" VIM-PLUG
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
