@@ -68,6 +68,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'leafgarland/typescript-vim'
+Plug 'gosukiwi/vim-atom-dark'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+" Commands launched at Vim startup
+autocmd VimEnter * color atom-dark-256
