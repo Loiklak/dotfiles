@@ -44,6 +44,14 @@ set cursorline
 " ' nicer colorscheme
 colorscheme slate
 
+" Show file options above the command line
+set wildmenu
+
+" Don't offer to open certain files/directories
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
+set wildignore+=*.pdf,*.psd
+set wildignore+=node_modules/*,bower_components/*
+
 " Set the working directory to wherever the open file lives
 set autochdir
 
