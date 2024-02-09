@@ -27,5 +27,5 @@
 	autofixup = "!f() { COMMIT=$(git log --pretty=oneline | fzf | awk '{print $1}'); git commit --fixup $COMMIT; GIT_SEQUENCE_EDITOR=: git rebase --autostash --autosquash -i $COMMIT^; }; f"
 	b = "!f() { git branch --sort=committerdate | fzf --tac | xargs git checkout; }; f"
 	deleteb = "!f() { git branch --sort=committerdate | fzf --tac | xargs git branch -d; }; f"
-	ammend = commit --amend
+	amend = commit --amend
 	wip = !git add . && git commit -m "wip"
